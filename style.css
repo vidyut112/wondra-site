@@ -1,0 +1,23 @@
+/* Wondra site: the app's graph-paper notebook look, no external requests. */
+:root{--paper:#EDF0F5;--ink:#161A35;--muted:#566079;--line:rgba(22,26,53,.16);--hi:#FFDE59;--surface:#FBFCFE;--accent:#2D44E0}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{color:var(--ink);background-color:var(--paper);
+  background-image:linear-gradient(rgba(45,68,224,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(45,68,224,.07) 1px,transparent 1px);
+  background-size:24px 24px;font-family:"Iowan Old Style",Georgia,serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:680px;margin:0 auto;padding:28px 20px 72px}
+.brand{display:flex;align-items:center;gap:10px;font-family:"Avenir Next","Trebuchet MS",system-ui,sans-serif;font-weight:700;font-size:20px;color:var(--ink);text-decoration:none}
+nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:36px;flex-wrap:wrap}
+nav .links a{font-family:"Avenir Next",system-ui,sans-serif;font-size:16px;color:var(--muted);margin-left:16px;text-decoration:none}
+nav .links a[aria-current]{color:var(--ink);font-weight:600}
+h1{font-family:"Avenir Next","Trebuchet MS",system-ui,sans-serif;font-weight:700;font-size:clamp(32px,8vw,44px);line-height:1.05;letter-spacing:-.02em;margin:0 0 10px}
+h2{font-family:"Avenir Next",system-ui,sans-serif;font-weight:700;font-size:22px;margin:34px 0 8px}
+.lede{color:var(--muted);margin:0 0 8px}
+.updated{font-family:"Avenir Next",system-ui,sans-serif;font-size:14px;color:var(--muted);margin:0 0 24px}
+.panel{background:var(--surface);border:2px solid var(--ink);border-radius:16px;padding:16px 18px;margin:20px 0}
+.panel p{margin:0}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.hl{background:linear-gradient(transparent 55%,var(--hi) 55%);padding:0 2px}
+ul{padding-left:22px}
+footer{margin-top:48px;font-family:"Avenir Next",system-ui,sans-serif;font-size:14px;color:var(--muted)}
